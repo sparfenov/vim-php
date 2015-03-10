@@ -1,6 +1,6 @@
 # Vim-php
 It is Vim setup convinient for web-development, especially for php.
-<center>![Screenshot](screenshot.png)</center>
+<center>![Screenshot](vim-screenshot.png)</center>
 
 ## Installation
 1. Clone repository somewhere, for example:
