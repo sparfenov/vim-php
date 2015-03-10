@@ -7,6 +7,10 @@ if [ ! -d "$INSTALLDIR/dotfiles.old" ]; then
 	mkdir $INSTALLDIR/dotfiles.old
 fi
 
+mkdir $PWD/backup/;
+mkdir $PWD/swap/;
+mkdir $PWD/undo/;
+
 for i in .vim .vimrc
 do
 	mv $INSTALLDIR/$i $INSTALLDIR/dotfiles.old/$i 2> /dev/null

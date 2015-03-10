@@ -109,9 +109,9 @@ let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
 " --- Backup and swap dirs ---
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
+set backupdir=~/.vim/backup/
+set directory=~/.vim/swap/
+set undodir=~/.vim/undo/
 
 "------  Text Navigation  ------
 " Prevent cursor from moving to beginning of line when switching buffers
@@ -239,11 +239,19 @@ vnoremap <C-K> :call PhpDocRange()<CR>
 let g:pdv_cfg_Author = 'Sergey Parfenov <s.parfenov@office.ngs.ru>'
 let g:pdv_cfg_Copyright = 'NGS'
 
+"--------- Syntastic ---------
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_php_phpmd_exec = '~/phpmd/src/bin/phpmd'
+let g:syntastic_phpmd_rules = "codesize,design,unusedcode"
+let g:syntastic_php_phpcs_args="--report=csv --standard=NGS"
+
 "--------- TAGS ---------
-set tags=~/tags
+set tags=~/.vim/tags
 nnoremap <leader>t :CtrlPTag<cr>
 " ,ct = Builds ctags
-map <Leader>ct :! /usr/local/bin/ctags -R --fields=+aimS --languages=php -f ~/tags %:p:h<CR>
+map <Leader>ct :! /usr/local/bin/ctags -R --fields=+aimS --languages=php -f ~/.vim/tags %:p:h<CR>
 
 
 "------  Fugitive Plugin Options  ------
@@ -267,14 +275,4 @@ map <Leader>U :g/^$/d<CR>
 map <Leader>R :retab<CR>
 " Deletes trailing space in file upon write
 " autocmd BufWritePre * :%s/\s\+$//e
-
-"------  JSON Filetype Settings  ------
-au BufRead,BufNewFile *.json set filetype=json
-let g:vim_json_syntax_conceal = 0
-nmap <silent> =j :%!python -m json.tool<CR>:setfiletype json<CR>
-
-"------  Local Overrides  ------
-if filereadable($HOME.'/.vimrc_local')
-	source $HOME/.vimrc_local
-endif
 
