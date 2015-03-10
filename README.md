@@ -2,7 +2,7 @@
 It is Vim setup convinient for web-development, especially for php.
 <center>![Screenshot](screenshot.png)</center>
 
-## Instalation
+## Installation
 1. Clone repository somewhere, for example:
 
  ```bash
@@ -14,4 +14,4 @@ It is Vim setup convinient for web-development, especially for php.
  ~/vim-php/install 
  ```
 
-It is simple, it will just make symlinks for vim and vimrc to your home dir(old vim files will be moved to dotfiles.old) and install submodules(clone nesessary vim plugins)
+It is simple, it will just make symlinks for vim and vimrc to your home dir (old vim files will be moved to dotfiles.old) and install submodules (clone nesessary vim plugins)
