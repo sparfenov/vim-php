@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Old .dotfiles moved to dotfiles.old/file";
+
+INSTALLDIR=${1:-$HOME}
+
+if [ ! -d "$INSTALLDIR/dotfiles.old" ]; then
+	mkdir $INSTALLDIR/dotfiles.old
+fi
+
+for i in .vim .vimrc
+do
+	mv $INSTALLDIR/$i $INSTALLDIR/dotfiles.old/$i 2> /dev/null
+	ln -s $PWD/$i $INSTALLDIR/$i;
+done;
+
+ln -s $PWD $INSTALLDIR/.vim
+ln -s $PWD/vimrc $INSTALLDIR/.vimrc
+
+echo "Initializing submodules..."
+git submodule init && git submodule update
