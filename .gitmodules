@@ -1,0 +1,33 @@
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/color_itg_flat"]
+	path = bundle/color_itg_flat
+	url = https://github.com/cdmedia/itg_flat_vim.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/Bling/vim-airline
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "bundle/smarty"]
+	path = bundle/smarty
+	url = https://github.com/blueyed/smarty.vim
+[submodule "bundle/pdv-standalone"]
+	path = bundle/pdv-standalone
+	url = https://github.com/mikehaertl/pdv-standalone.git
+[submodule "bundle/javascript-libraries-syntax"]
+	path = bundle/javascript-libraries-syntax
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "bundle/vim-dracula"]
+	path = bundle/vim-dracula
+	url = https://github.com/crusoexia/vim-dracula
