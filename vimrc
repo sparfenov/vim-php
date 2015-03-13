@@ -163,14 +163,6 @@ nnoremap <silent> <Leader>q :Bclose<CR>
 " ,Q Closes the current window
 nnoremap <silent> <Leader>Q <C-w>c
 
-" Return to last edit position when opening files (You want this!)
-"autocmd BufReadPost *
-     "\ if line("'\"") > 0 && line("'\"") <= line("$") |
-     "\   exe "normal! g`\"" |
-     "\ endif
-"" Remember info about open buffers on close
-"set viminfo^=%
-
 "------  Searching  ------
 set incsearch
 set ignorecase

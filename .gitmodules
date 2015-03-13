@@ -31,3 +31,6 @@
 [submodule "bundle/vim-dracula"]
 	path = bundle/vim-dracula
 	url = https://github.com/crusoexia/vim-dracula
+[submodule "bundle/ngnix-vim"]
+	path = bundle/ngnix-vim
+	url = https://github.com/evanmiller/nginx-vim-syntax.git
