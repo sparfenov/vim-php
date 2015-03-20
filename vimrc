@@ -119,9 +119,9 @@ set nostartofline
 " Keep the cursor in place while joining lines
 nnoremap J mzJ`z
 " H = Home, L = End
-noremap H ^
-noremap L $
-vnoremap L g_
+"noremap H ^
+"noremap L $
+"vnoremap L g_
 
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
